@@ -14,18 +14,24 @@ public class Main
                 String i = scanner.nextLine();
                 System.out.println(i);}
         } catch (Exception e) {System.out.printf("There is no animal \"%s\" in the zoo.",a);}
+        System.out.println("You've reached the end of the program. To check another habitat, please restart the watcher.");
     }
     public static void main(String[] args){
 
-        System.out.println("Which animal would you like to view?");
+        System.out.printf("Please enter the name of the animal you would like to view:%n" +
+                "%nCamel%nElephant%nGiraffe%nGorilla%nLion%nMonkey%nPanda%nPenguin%nTiger%nTurtle%nZebra%n%n");
         Scanner userScanner = new Scanner(System.in);
         String animalType = userScanner.nextLine();
         LocalTime currentTime = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
         Double habitatTemperature = Math.random()*(100-50)+50;
 
-        System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %2fF%n%n",animalType,(currentTime.getHour()>12) ? currentTime.minusHours(12)+"PM":currentTime+"AM",habitatTemperature);
-
         File animal = new File("src/Zoo/"+animalType.toLowerCase()+".txt");
+        if (!animal.exists()){
+            System.out.printf("There is no animal \"%s\" in the zoo.",animalType);
+            System.exit(0);
+        }
+
+        System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n",animalType,(currentTime.getHour()>12) ? currentTime.minusHours(12)+"PM":currentTime+"AM",habitatTemperature);
         printAnimal(animal, animalType);
     }
 }
