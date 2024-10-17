@@ -29,27 +29,27 @@ public class Main
 
         String animalType;
         switch (animalNum){
-            case 1: animalType = "camel";
+            case 1: animalType = "Camel";
             break;
-            case 2: animalType = "elephant";
+            case 2: animalType = "Elephant";
             break;
-            case 3: animalType = "giraffe";
+            case 3: animalType = "Giraffe";
             break;
-            case 4: animalType = "gorilla";
+            case 4: animalType = "Gorilla";
             break;
-            case 5: animalType = "lion";
+            case 5: animalType = "Lion";
             break;
-            case 6: animalType = "monkey";
+            case 6: animalType = "Monkey";
             break;
-            case 7: animalType = "panda";
+            case 7: animalType = "Panda";
             break;
-            case 8: animalType = "penguin";
+            case 8: animalType = "Penguin";
             break;
-            case 9: animalType = "tiger";
+            case 9: animalType = "Tiger";
             break;
-            case 10: animalType = "turtle";
+            case 10: animalType = "Turtle";
             break;
-            case 11: animalType = "zebra";
+            case 11: animalType = "Zebra";
             break;
             default: animalType = null;
             System.out.println("Chosen camera does not exist");
