@@ -27,7 +27,7 @@ public class Main
             Double habitatTemperature = Math.random() * (100 - 50) + 50;
 
             File animal = new File("src/Zoo/" + animalType.toLowerCase() + ".txt");
-            if (!animal.exists()) {
+            if (!animal.exists()){
                 System.out.printf("There is no animal \"%s\" in the zoo.", animalType);
                 System.exit(0);
             }
