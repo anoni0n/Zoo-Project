@@ -24,19 +24,21 @@ public class Main
             Scanner userScanner = new Scanner(System.in);
             String animalType = userScanner.nextLine();
             LocalTime currentTime = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
-            Double habitatTemperature = Math.random() * (100 - 50) + 50;
+            Double habitatTemperature = Math.random() * (50) + 50;
 
+            //creates a file object and checks if such an animal exists in the zoo
             File animal = new File("src/Zoo/" + animalType.toLowerCase() + ".txt");
             if (!animal.exists()){
                 System.out.printf("There is no animal \"%s\" in the zoo.", animalType);
-                System.exit(0);
             }
-
-            System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n", animalType, (currentTime.getHour() > 12) ? currentTime.minusHours(12) + "PM" : currentTime + "AM", habitatTemperature);
-            printAnimal(animal, animalType);
-
-            System.out.println("\nYou've reached the end of the program. To check another habitat, enter \"1\" to exit the program, enter \"0\"");
-            userIntent = userScanner.nextInt();
+            else {
+                //displays the animal's information
+                System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n", animalType, (currentTime.getHour() > 12) ? currentTime.minusHours(12) + "PM" : currentTime + "AM", habitatTemperature);
+                printAnimal(animal, animalType);
+            }
+                //asks the user in they want to continue the program and loops if they do
+                System.out.println("\nTo check another habitat, enter \"1\" to exit the program, enter \"0\"");
+                userIntent = userScanner.nextInt();
         }
         System.exit(0);
     }
