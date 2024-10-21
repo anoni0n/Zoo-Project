@@ -24,7 +24,7 @@ public class Main
             Scanner userScanner = new Scanner(System.in);
             String animalType = userScanner.nextLine();
             LocalTime currentTime = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
-            Double habitatTemperature = Math.random() * (50) + 50;
+            Double habitatTemperature = Math.random() * 50 + 50;
 
             //creates a file object and checks if such an animal exists in the zoo
             File animal = new File("src/Zoo/" + animalType.toLowerCase() + ".txt");
