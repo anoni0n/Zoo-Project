@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Main
 {
+    //Creates a file based on animalType and prints the contents of the file.
     public static void printAnimal(String a){
         File animalFile = new File("src/Zoo/"+a+".txt");
         System.out.println("You are now viewing the "+a+" habitat.\n");
@@ -20,6 +21,7 @@ public class Main
     }
     public static void main(String[] args) {
 
+        //userIntent is used to break out of the loop
         int userIntent = 1;
         while (userIntent == 1) {
             System.out.printf("Please enter the number of the habitat you would like to view:%n" +
@@ -29,6 +31,7 @@ public class Main
             LocalTime currentTime = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
             Double habitatTemperature = Math.random() * (100 - 50) + 50;
 
+            //animalType is initialized based on the number inputted
             String animalType;
             switch (animalNum) {
                 case 1:
@@ -69,6 +72,7 @@ public class Main
                     System.out.println("Chosen camera does not exist.");
                     break;
             }
+
 
             if (animalType != null) {
                 System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n", animalType, (currentTime.getHour() > 12) ? currentTime.minusHours(12) + "PM" : currentTime + "AM", habitatTemperature);
