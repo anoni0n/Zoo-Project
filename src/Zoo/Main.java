@@ -3,13 +3,14 @@ package Zoo;
 import java.time.LocalTime;
 import java.io.File;
 import java.time.temporal.ChronoUnit;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Main
 {
     //Creates a file based on animalType and prints the contents of the file.
     public static void printAnimal(String a){
-        File animalFile = new File("src/Zoo/"+a+".txt");
+        File animalFile = new File("src/Zoo/animals/"+a+".txt");
         System.out.println("You are now viewing the "+a+" habitat.\n");
         try {
             Scanner scanner = new Scanner(animalFile);
@@ -29,7 +30,7 @@ public class Main
             Scanner userScanner = new Scanner(System.in);
             int animalNum = userScanner.nextInt();
             LocalTime currentTime = LocalTime.now().truncatedTo(ChronoUnit.MINUTES);
-            Double habitatTemperature = Math.random() * (100 - 50) + 50;
+            double habitatTemperature = Math.random() * 50 + 50;
 
             //animalType is initialized based on the number inputted
             String animalType;
@@ -75,7 +76,7 @@ public class Main
 
 
             if (animalType != null) {
-                System.out.printf("Animal Type: %s %nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n", animalType, (currentTime.getHour() > 12) ? currentTime.minusHours(12) + "PM" : currentTime + "AM", habitatTemperature);
+                System.out.printf("Animal Type: %s%nCurrent Time: %s%nHabitat Temperature: %.2fF%n%n", animalType, (currentTime.getHour() > 12) ? currentTime.minusHours(12) + "PM" : currentTime + "AM",habitatTemperature);
                 printAnimal(animalType);
             }
             //asks the user in they want to continue the program and loops if they do
