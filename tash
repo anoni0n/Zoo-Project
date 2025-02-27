@@ -1,0 +1,33 @@
+[33m7d33795[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpersonal-additions[m[33m, [m[1;31morigin/personal-additions[m[33m)[m HEAD@{0}: checkout: moving from personal-additions to personal-additions
+[33m7d33795[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpersonal-additions[m[33m, [m[1;31morigin/personal-additions[m[33m)[m HEAD@{1}: branch: Reset to origin/personal-additions
+[33m7d33795[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpersonal-additions[m[33m, [m[1;31morigin/personal-additions[m[33m)[m HEAD@{2}: checkout: moving from master to personal-additions
+[33m81ebdc2[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{3}: checkout: moving from personal-additions to master
+[33m989f49a[m HEAD@{4}: checkout: moving from 7d33795bbfd8fa2c208a0c4750a472b0830d089b to personal-additions
+[33m7d33795[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpersonal-additions[m[33m, [m[1;31morigin/personal-additions[m[33m)[m HEAD@{5}: checkout: moving from personal-additions to 7d33795bbfd8fa2c208a0c4750a472b0830d089b
+[33m989f49a[m HEAD@{6}: checkout: moving from master to personal-additions
+[33m81ebdc2[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{7}: checkout: moving from personal-additions to master
+[33m989f49a[m HEAD@{8}: commit: added javadocs and comments
+[33m7d33795[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpersonal-additions[m[33m, [m[1;31morigin/personal-additions[m[33m)[m HEAD@{9}: merge origin/personal-additions: Fast-forward
+[33mf29d4bf[m HEAD@{10}: checkout: moving from master to personal-additions
+[33m81ebdc2[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{11}: checkout: moving from personal-additions to master
+[33mf29d4bf[m HEAD@{12}: commit: Zoo Project part 4
+[33m24cfd60[m HEAD@{13}: Branch: renamed refs/heads/personal to refs/heads/personal-additions
+[33m24cfd60[m HEAD@{15}: checkout: moving from master to personal
+[33m81ebdc2[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{16}: commit: Zoo Project part 4
+[33m765302c[m HEAD@{17}: checkout: moving from personal to master
+[33m24cfd60[m HEAD@{18}: checkout: moving from master to personal
+[33m765302c[m HEAD@{19}: commit: Zoo Project part 4
+[33m368d5b8[m HEAD@{20}: checkout: moving from personal to master
+[33m24cfd60[m HEAD@{21}: commit: Zoo Project part 4
+[33mc77b8cc[m HEAD@{22}: commit: Zoo Project part 4
+[33m2be6d50[m HEAD@{23}: commit: Zoo Project part 4
+[33m8c3869a[m HEAD@{24}: commit: Zoo Project part 3 (final copy - no personal additions)
+[33maf2f287[m HEAD@{25}: checkout: moving from master to personal
+[33m368d5b8[m HEAD@{26}: commit: Zoo Project part 3 (final copy - no personal additions)
+[33m8ce86ba[m HEAD@{27}: checkout: moving from personal to master
+[33maf2f287[m HEAD@{28}: checkout: moving from master to personal
+[33m8ce86ba[m HEAD@{29}: commit: Zoo Project part 3 (final copy - no personal additions)
+[33maf2f287[m HEAD@{30}: commit: Zoo Project part 3 (not final copy; push to separate branch)
+[33mca812b4[m HEAD@{31}: commit: Zoo Project parts 1 & 2(in progress)
+[33m4cda9c9[m HEAD@{32}: commit: Zoo Project parts 1 & 2(in progress)
+[33m1211654[m HEAD@{33}: commit (initial): Zoo Project parts 1 & 2(in progress)
